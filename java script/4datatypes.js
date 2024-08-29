@@ -36,5 +36,6 @@ let a;
 console.log(a)
 console.log(typeof a)
 
-
+console.log(typeof [1, 2, 3, 4])
+console.log(typeof {})
 
