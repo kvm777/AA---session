@@ -5,8 +5,10 @@
     types of connditional staments in JS
         1) if, else if, else
         2) switch statements
-        3) ternary operator
+        3) ternary operator (ES6+)
 */
+
+
 
 let age = 10;
 
