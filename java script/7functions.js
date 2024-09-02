@@ -145,3 +145,78 @@ let output = factorial(-10)
 console.log("factorial output is",output)
 
 
+
+// rest parameters...
+
+// values to array.. is rest
+    // we use rest ... when we create the function
+
+// array to values... spreading
+    // we use spreading... while function calling
+
+const numberSum = function(...values){
+    console.log(values)
+    let out = 0
+    for (let value of values){
+        out += value
+    }
+
+    return out;
+}
+
+const sumValue = numberSum(1,3,5,7,4,33,22,10)
+console.log(sumValue)
+
+
+// spreading....
+
+let arr = [10,20, 4, 5, 6]
+
+console.log(Math.max(...arr))
+
+//it expects the values.... max(1,4,7,2)
+
+
+// local scope and global scope
+
+/**
+ * local scope --
+ *      the scope of the variable is with in the function is called local scope.
+ *
+ * global scope --
+ *      the scope of the variable is to the entire program is called global scope.
+ * 
+ */
+
+
+var globalVar = "im the global variable"
+const variableScope = function(){
+    var localVar = "im the local variable"
+
+    return localVar
+}
+
+console.log(globalVar)
+// console.log(localVar)   //got the error of not-defined
+console.log(variableScope())
+
+
+// callback function
+// passing one fun as argument to the another function
+
+
+const outerFun = function(callback){
+    console.log("from the outer function")
+
+    callback()
+}
+
+
+const innerFun = function(){
+    console.log("from the inner function")
+}
+
+
+outerFun(innerFun)
+
+
