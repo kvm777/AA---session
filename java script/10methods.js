@@ -2,7 +2,7 @@
  * map, filter, reduce, forEach,
  * 
  * template literals
- * destructing
+ * object destructing
  * import and exports
  * 
  * 
@@ -50,6 +50,8 @@ console.log(adultages)
 // using filter method...
 let newAges = ages.filter(age => age >= 18)
 console.log(newAges)
+
+newAges.forEach(ele => console.log(ele))
 
 
 let mapNewAges = ages.map(age => age >= 18)
